@@ -39,11 +39,7 @@
                                     <img :src="product.imageURL" class="img-responsive" :alt="product.productName" />
                                 </div>
                                 <div class="info">
-                                    <div class="">
-                                        <h4 class="text-center">{{product.productName}}</h4>
-                                    </div>
-                                    <div class="clearfix">
-                                    </div>
+                                    <h4 class="text-center">{{product.productName}}</h4>
                                 </div>
                             </div>
                         </div>
