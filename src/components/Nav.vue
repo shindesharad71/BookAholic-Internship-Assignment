@@ -109,10 +109,12 @@ input {
 button {
   background-color: #2E2E2E;
   color: #cccccc;
+  border-left: none;
 }
 
-button:hover {
+button:hover, button:active {
   background-color: #2E2E2E;
   color: #cccccc;
+  border-left: none;
 }
 </style>
