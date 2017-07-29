@@ -75,8 +75,14 @@
     color: #fcfcfc;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li:focus, .nav>li:hover, .nav>li:active {
   color: #fcfcfc;
+  background-color: #CF003A
+}
+
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active {
+  color: #fcfcfc;
+  background-color: #CF003A
 }
 
 .nav>li>a {
