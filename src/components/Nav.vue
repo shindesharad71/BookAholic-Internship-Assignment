@@ -70,5 +70,6 @@
     border-radius: 0px;
     background-color: #000;
     border-color: #000;
+    margin-bottom: 0px;
 }
 </style>
