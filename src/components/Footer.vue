@@ -1,10 +1,13 @@
 <template>
+<div>
     <footer>
         <div class="container-fluid">
             <p class="text-center">BookAholic 2017</p>
         </div>
     </footer>
+</div>
 </template>
+
 
 <style scoped>
 footer {

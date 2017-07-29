@@ -3,12 +3,11 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <!-- V-For Cursoul -->
             <div class="item active" v-for="slide in slides">
-                <img class="img-responsive" :src="slide.imageURL" alt="Chania">
+                <img class="img-responsive" :src="slide.imageURL" :alt="slide.comboName">
                 <div class="carousel-caption">
-                    <h1>Chania</h1>
-                    <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    <h1>{{slide.comboName}}</h1>
+                    <p>{{slide.comboDescription}}</p>
                 </div>
             </div>
         <!-- Left and right controls -->

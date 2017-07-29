@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vue": "^2.3.3",
-    "vue-resource": "^1.3.4"
+    "vue-resource": "^1.3.4",
+    "vue-strap": "github:wffranco/vue-strap"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

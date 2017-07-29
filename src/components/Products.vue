@@ -36,7 +36,7 @@
                         <div class="col-sm-3" v-for="product in products">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img :src="product.imageURL" class="img-responsive" alt="a" />
+                                    <img :src="product.imageURL" class="img-responsive" :alt="product.productName" />
                                 </div>
                                 <div class="info">
                                     <div class="">
