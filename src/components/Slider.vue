@@ -1,4 +1,5 @@
 <template>
+<div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -44,6 +45,7 @@
         </a>
     </div>
 </div>
+</div>
 </template>
 
 <script>
@@ -58,14 +60,13 @@ export default {
     },
     methods: {
         getSlides() {
-            {
-                this.$http.get('https://us-central1-bookaholic-786.cloudfunctions.net/home').then(response => {
-                    return this.slides = response.body;
-                    console.log(this.slides);
-                }, response => {
-                    console.log(error);
-                });
-            }
+            this.$http.get('https://us-central1-bookaholic-786.cloudfunctions.net/home')
+            .then(response => {
+                this.slides = response.body;
+                console.log(response.body);
+            }, error => {
+                console.log(error);
+            });
         }
     }
 }
