@@ -1,7 +1,7 @@
 <template>
 <div>
     <div id="product-header" class="container">
-        <div style="border-left: 5px solid #F38D84; margin-left: 10px;" class="container">
+        <div style="border-left: 5px solid #CF003A; margin-left: 10px;" class="container">
             <div class="col-md-6"><h2>Top Products</h2></div>
             <div class="col-md-6 push-right" id="options">
                 <label><input type="checkbox"> Men</label>

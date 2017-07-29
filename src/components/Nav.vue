@@ -1,6 +1,6 @@
 <template>
     <!-- Static navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -75,6 +75,10 @@
     color: #fcfcfc;
 }
 
+.nav>li {
+  margin-bottom: 0px;
+}
+
 .nav>li:focus, .nav>li:hover, .nav>li:active {
   color: #fcfcfc;
   background-color: #CF003A
@@ -92,9 +96,8 @@
 
 #shop {
   padding: 20px 30px;
-  display: inline-block;
+  display: block;
   font-size: 20px;
-  margin-right: 0px;
   border-left: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
 }
@@ -104,6 +107,11 @@ input {
 }
 
 button {
+  background-color: #2E2E2E;
+  color: #cccccc;
+}
+
+button:hover {
   background-color: #2E2E2E;
   color: #cccccc;
 }
