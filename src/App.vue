@@ -26,3 +26,9 @@ export default {
   }
 }
 </script>
+
+<style>
+* {
+  font-family: 'Droid Serif', serif;
+}
+</style>

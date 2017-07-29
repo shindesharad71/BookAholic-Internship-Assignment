@@ -66,4 +66,12 @@ export default {
     bottom: auto;
     opacity: 0.9;
 }
+
+h1 {
+    font-size: 58px;
+}
+
+p {
+    font-size: 21px;
+}
 </style>

@@ -58,7 +58,7 @@
                   <li><a href="#">$</a></li>
                 </ul>
               </li>
-              <li><i class="glyphicon glyphicon-shopping-cart"></i>Total<br>123</li>
+              <li><i id="shop" class="glyphicon glyphicon-shopping-cart"></i>123</li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -72,6 +72,21 @@
     border-color: #2E2E2E;
     margin-bottom: 0px;
     min-height: 60px;
-    color: #2C2C2C;
+    color: #fcfcfc;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  color: #fcfcfc;
+}
+
+.nav>li>a {
+  font-size: 18px;
+   color: #fcfcfc;
+}
+
+#shop {
+  padding: 20px;
+  display: inline-block;
+  font-size: 20px;
 }
 </style>
