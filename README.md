@@ -1,3 +1,3 @@
-# BookAlcoholic Internship Assignment
+# BookAholic Internship Assignment
 
-### A Vue JS Project with API from BookAlcoholic.
+### A Vue JS Project with API from BookAholic.
