@@ -33,14 +33,14 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="row">
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" v-for="product in products">
                             <div class="col-item">
                                 <div class="photo">
-                                    <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                    <img :src="product.imageURL" class="img-responsive" alt="a" />
                                 </div>
                                 <div class="info">
                                     <div class="">
-                                        <h4 class="text-center">Sample Product</h4>
+                                        <h4 class="text-center">{{product.productName}}</h4>
                                     </div>
                                     <div class="clearfix">
                                     </div>
@@ -59,7 +59,24 @@
 
 <script>
 export default {
-  
+    data () {
+        return {
+            products: []
+        }
+    },
+    created() {
+        this.getProducts();
+    },
+    methods: {
+        getProducts() {
+            this.$http.get('https://us-central1-bookaholic-786.cloudfunctions.net/home')
+            .then(response => {
+                this.products = response.body.products;
+            }, error => {
+                console.log(error);
+            });
+        }
+    }
 }
 </script>
 
