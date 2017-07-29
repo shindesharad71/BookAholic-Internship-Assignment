@@ -74,14 +74,14 @@ export default {
 
 <style scoped>
 .carousel .item {
-  height: 500px;
+  height: 590px;
 }
 
 .item img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 500px;
+    min-height: 590px;
 }
 
 .carousel-caption {
