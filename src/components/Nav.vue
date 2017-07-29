@@ -10,7 +10,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img style="max-width:40px; margin-top: -7px;" src="https://bookaholicc.com/images/logo_new.png">
+                <img style="max-width:50px; margin-top: -7px;" src="https://bookaholicc.com/images/logo_new.png">
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -68,8 +68,10 @@
 <style scoped>
 .navbar {
     border-radius: 0px;
-    background-color: #000;
-    border-color: #000;
+    background-color: #2E2E2E;
+    border-color: #2E2E2E;
     margin-bottom: 0px;
+    min-height: 60px;
+    color: #2C2C2C;
 }
 </style>
