@@ -48,7 +48,26 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            slides: []
+        }
+    },
+    created() {
+        this.getSlides();
+    },
+    methods: {
+        getSlides() {
+            {
+                this.$http.get('https://us-central1-bookaholic-786.cloudfunctions.net/home').then(response => {
+                    return this.slides = response.body;
+                    console.log(this.slides);
+                }, response => {
+                    console.log(error);
+                });
+            }
+        }
+    }
 }
 </script>
 
